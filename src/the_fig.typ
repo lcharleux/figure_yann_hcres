@@ -80,13 +80,13 @@
   (
     
     
-    blacknode(R, -150deg, [A. MODELE INFORMATIQUE], <a>),
-    blacknode(R, -30deg, [B. SYSTEME REEL], <b>),
-    blacknode(R+.9, 90deg, [C. MODELE \  CONCEPTUEL], <c>),
-    rednode(R+.5, -90deg, [D. VALIDATION OPERATIONNELLE], <d>),
-    rednode(R, 150deg, [E. VERIFICATION \ DU MODELE \ INFORMATISE], <e>),
-    rednode(R, 30deg, [F. VALIDATION \ DU MODELE \ CONCEPTUEL], <f>),
-    bluenode(0, 0, [O. VALIDITE \ DES DONNEES \ D'ENTREE], <O>),
+    blacknode(R, -150deg, [MODELE INFORMATIQUE], <a>),
+    blacknode(R, -30deg, [SYSTEME REEL], <b>),
+    blacknode(R+.9, 90deg, [MODELE \  CONCEPTUEL], <c>),
+    rednode(R+.5, -90deg, [VALIDATION OPERATIONNELLE], <d>),
+    rednode(R, 150deg, [VERIFICATION \ DU MODELE \ INFORMATISE], <e>),
+    rednode(R, 30deg, [VALIDATION \ DU MODELE \ CONCEPTUEL], <f>),
+    bluenode(0, 0, [VALIDITE \ DES DONNEES \ D'ENTREE], <O>),
 
     // fatgraynode(0, 0, (<O>, <a>, <b>, <c>, <d>, <e>, <f>)),
     edge(<a.north>, <d.west>, bend: 15deg, "solid-", stroke:red+1.5pt, "wave"),
@@ -99,11 +99,11 @@
     edge(<O>, <b.south-west>, "-solid", stroke:teal+2pt),
     edge(<O>, <c.north>, "-solid", stroke:teal+2pt),
     edge(<c>, <b>, "solid-solid", stroke:black+2pt),
-    edge(<c>, <a>, "solid-solid", stroke:black+2pt),
+    edge(<c>, <a>, "-solid", stroke:black+2pt),
     edge(<a>, <b>, "solid-solid", stroke:black+2pt),
-    edgenode(1.05, 30deg, text(9pt)[ANALYSE & \ MODELISATION], <g>),
-    edgenode(1.05, 150deg, text(9pt)[IMPLEMENTATION], <g>),
-    edgenode(1.15, -90deg, text(9pt)[EXPERIMENTATIONS], <g>),
+    edgenode(1.05, 30deg, text(10pt)[ANALYSE & \ MODELISATION], <g>),
+    edgenode(1.05, 150deg, text(10pt)[IMPLEMENTATION], <g>),
+    edgenode(1.15, -90deg, text(10pt)[EXPERIMENTATIONS], <g>),
   ),
 )
 ]
