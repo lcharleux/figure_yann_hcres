@@ -1,0 +1,1 @@
+typst compile the_fig.typ the_fig.pdf
